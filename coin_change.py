@@ -26,6 +26,7 @@ def coin_change2(N,coin_list):
         for j in range(coin_list[i],N+1): 
             ways[j]=(min(ways[j],   ways[j-coin_list[i]]+1))             
     return ways[N]
+ 
                 
 def coin_change3(N,coin_list): 
     ways= [1E6]*(N+1)
@@ -40,7 +41,7 @@ def coin_change3(N,coin_list):
         return ways[N]
 
 coin_list = [1,5,10]
-N = 12
+N = 15
 
 print(coin_change(N,coin_list))
 print(coin_change2(N,coin_list))
@@ -53,7 +54,7 @@ N = 3
 print(coin_change(N,coin_list))
 print(coin_change2(N,coin_list))
 print(coin_change3(N,coin_list)) 
-
+ 
 
         
 
