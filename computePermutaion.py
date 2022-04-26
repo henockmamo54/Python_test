@@ -26,5 +26,5 @@ def computePermutaion(lst):
     return output
 
 
-
-print(computePermutaion([1,2,3]))
+ 
+print(computePermutaion(['a','b','c'])) 
